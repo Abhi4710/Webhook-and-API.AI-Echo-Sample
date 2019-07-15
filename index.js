@@ -23,7 +23,7 @@ restService.post("/echo", function(req, res) {
   
   var req_d = Object.entries(req);
 //   console.log(typeof(req));
-  console.log('Request: ' + req_d)
+  console.log(req_d)
 //   var entries = Object.entries(req.body);
 //   var header = Object.entries(req.header);
 //   console.log('req header: '+ header);
