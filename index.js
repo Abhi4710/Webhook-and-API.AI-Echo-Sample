@@ -20,8 +20,8 @@ restService.post("/echo", function(req, res) {
     req.body.queryResult.parameters.echoText
       ? req.body.queryResult.parameters.echoText
       : "Seems like some problem. Speak again.";
-  var enteries = Object.enteries(req);
-  console.log('req: '+ enteries);
+  var entries = Object.entries(req);
+  console.log('req: '+ entries);
 //   var text = req.body.queryResult.parameters.echoText
 //   console.log(text)
   
