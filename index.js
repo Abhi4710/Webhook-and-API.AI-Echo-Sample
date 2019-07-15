@@ -21,7 +21,7 @@ restService.post("/echo", function(req, res) {
       ? req.body.queryResult.parameters.echoText
       : "Seems like some problem. Speak again.";
   
-  var res_d = JSON.parse(res)
+  var res_d = req.json()
   console.log(res_d)
   var entries = Object.entries(req.body);
 //   var header = Object.entries(req.header);
