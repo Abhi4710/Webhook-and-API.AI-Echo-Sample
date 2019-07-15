@@ -24,12 +24,12 @@ restService.post("/echo", function(req, res) {
   console.log(n)
   if (n.includes("what")) {
     console.log('contains what');
-    var speech = 'PLease wait checking device' + req.body.queryResult.parameters.device;}
+    var speech = 'Please wait checking device - ' + req.body.queryResult.parameters.device;}
   else{
    var speech =
     req.body.queryResult &&
     req.body.queryResult.parameters
-    ? "It is turned" + req.body.queryResult.parameters.state : "Seems like some problem. Speak again.";
+    ? "It is turned " + req.body.queryResult.parameters.state : "Seems like some problem. Speak again.";
   }
   
   var req_d = Object.entries(req);
