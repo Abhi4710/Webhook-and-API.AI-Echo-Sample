@@ -20,12 +20,15 @@ restService.post("/echo", function(req, res) {
 //     req.body.queryResult.parameters.echoText
 //       ? req.body.queryResult.parameters.echoText
 //       : "Seems like some problem. Speak again.";
+  if ('What' in req.body.queryResult.queryText) {
+    var speech = 'PLease wait checking device' + req.body.queryResult.parameters.device;}
+  else{
    var speech =
     req.body.queryResult &&
-    req.body.queryResult.parameters &&
-    req.body.queryResult.parameters.echoText
-      ? "It is turned" + req.body.queryResult.parameters.state;
+    req.body.queryResult.parameters
+    ?It is turned" + req.body.queryResult.parameters.state;
       : "Seems like some problem. Speak again.";
+  }
   
   var req_d = Object.entries(req);
 //   console.log(typeof(req));
