@@ -21,13 +21,13 @@ restService.post("/echo", function(req, res) {
       ? req.body.queryResult.parameters.echoText
       : "Seems like some problem. Speak again.";
   
-  var res_d = Object.entries(req);
-  console.log(typeof(req));
-  console.log(res_d)
-  var entries = Object.entries(req.body);
+  var req_d = Object.entries(req);
+//   console.log(typeof(req));
+  console.log('Request: ' + req_d)
+//   var entries = Object.entries(req.body);
 //   var header = Object.entries(req.header);
 //   console.log('req header: '+ header);
-  console.log('req body: '+ entries);
+//   console.log('req body: '+ entries);
 //   console.log('req Query:' + req.body.queryResult.parameters.echoText);
 //   console.log('req responseID:' + req.body.responseId);
 //   console.log('req queryResult:' + Object.entries(req.body.queryResult));
