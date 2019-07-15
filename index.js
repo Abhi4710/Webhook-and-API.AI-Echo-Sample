@@ -20,15 +20,16 @@ restService.post("/echo", function(req, res) {
     req.body.queryResult.parameters.echoText
       ? req.body.queryResult.parameters.echoText
       : "Seems like some problem. Speak again.";
+  console.log(res.json())
   var entries = Object.entries(req.body);
   var header = Object.entries(req.header);
-  console.log('req header: '+ header);
+//   console.log('req header: '+ header);
   console.log('req body: '+ entries);
-  console.log('req Query:' + req.body.queryResult.parameters.echoText);
-  console.log('req responseID:' + req.body.responseId);
-  console.log('req queryResult:' + Object.entries(req.body.queryResult));
-  console.log('req originalDetectIntentRequest:' + Object.entries(req.body.originalDetectIntentRequest));
-  console.log('req session: ' + req.body.session);
+//   console.log('req Query:' + req.body.queryResult.parameters.echoText);
+//   console.log('req responseID:' + req.body.responseId);
+//   console.log('req queryResult:' + Object.entries(req.body.queryResult));
+//   console.log('req originalDetectIntentRequest:' + Object.entries(req.body.originalDetectIntentRequest));
+//   console.log('req session: ' + req.body.session);
 //   var text = req.body.queryResult.parameters.echoText
 //   console.log(text)
   
