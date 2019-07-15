@@ -23,12 +23,12 @@ restService.post("/echo", function(req, res) {
   
   var req_d = Object.entries(req);
 //   console.log(typeof(req));
-  console.log(req_d)
+//   console.log(req_d)
 //   var entries = Object.entries(req.body);
 //   var header = Object.entries(req.header);
 //   console.log('req header: '+ header);
 //   console.log('req body: '+ entries);
-//   console.log('req Query:' + req.body.queryResult.parameters.echoText);
+  console.log('req Query:' + Object.entries(req.body.queryResult));
 //   console.log('req responseID:' + req.body.responseId);
 //   console.log('req queryResult:' + Object.entries(req.body.queryResult));
 //   console.log('req originalDetectIntentRequest:' + Object.entries(req.body.originalDetectIntentRequest));
