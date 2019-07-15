@@ -29,7 +29,7 @@ restService.post("/echo", function(req, res) {
    var speech =
     req.body.queryResult &&
     req.body.queryResult.parameters
-    ?It is turned" + req.body.queryResult.parameters.state;
+    ?"It is turned" + req.body.queryResult.parameters.state;
       : "Seems like some problem. Speak again.";
   }
   
