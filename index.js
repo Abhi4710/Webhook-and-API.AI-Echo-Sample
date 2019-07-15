@@ -20,9 +20,9 @@ restService.post("/echo", function(req, res) {
     req.body.queryResult.parameters.echoText
       ? req.body.queryResult.parameters.echoText
       : "Seems like some problem. Speak again.";
-  console.log(speech)
-  var text = req.body.queryResult.parameters.echoText
-  console.log(text)
+  console.log('req'+ req)
+//   var text = req.body.queryResult.parameters.echoText
+//   console.log(text)
   
   var speechResponse = {
     google: {
