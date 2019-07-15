@@ -21,7 +21,7 @@ restService.post("/echo", function(req, res) {
 //       ? req.body.queryResult.parameters.echoText
 //       : "Seems like some problem. Speak again.";
   var n = req.body.queryResult.parameters.device;
-  if (n.includes("what")) {
+  if (n.includes("what") == True) {
     console.log('contains what');
     var speech = 'PLease wait checking device' + req.body.queryResult.parameters.device;}
   else{
