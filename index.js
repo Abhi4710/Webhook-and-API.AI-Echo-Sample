@@ -29,6 +29,7 @@ restService.post("/echo", function(req, res) {
 //   console.log('req header: '+ header);
 //   console.log('req body: '+ entries);
   console.log('req Query:' + Object.entries(req.body.queryResult));
+  console.log('Query param ' + Object.entries(req.body.queryResult.parameters));
 //   console.log('req responseID:' + req.body.responseId);
 //   console.log('req queryResult:' + Object.entries(req.body.queryResult));
 //   console.log('req originalDetectIntentRequest:' + Object.entries(req.body.originalDetectIntentRequest));
